@@ -9,7 +9,7 @@
 function numSent() {
   //initializing variables
   let counter = 1;
-  let facAnswer = 1;
+  let factorialResult = 1;
   
   //getting user input for the variable userNum
   let userNum = parseInt(document.getElementById("number").value);
@@ -30,11 +30,11 @@ function numSent() {
   else {
     //using a do... while loop to find factorial
     do {
-      facAnswer = facAnswer * counter;
+      factorialResult = factorialResult * counter;
       counter = counter + 1;
     } while (counter <= userNum);
   }
 
   //display factorial back to screen
-  document.getElementById("results").innerHTML = "The factorial of your inputted number (!" + userNum + ") = " + facAnswer + ".";
+  document.getElementById("results").innerHTML = "The factorial of your inputted number (!" + userNum + ") = " + factorialResult + ".";
 }
